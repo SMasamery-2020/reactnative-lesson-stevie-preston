@@ -1,1 +1,43 @@
+Element: 
+ 1) Arrays
 
+Array:
+  Arrays are used to store multiple types (no maximum value) of values, being strings, int, float, or variable.
+  
+  Syntax:
+    arrayName: ['string', 1, 'string2', 50]
+  
+  Arrays can be used to store values that can be called through *indexing*.
+  
+  Indexing allows for accessing different values through the syntax:
+    arrayName[indexValue]
+  So in this case, to access 'string' you will use the syntax:
+    arrayName[0]
+  
+  Tip: Indexing always starts with 0, then goes up by one.
+  
+  You can use operations and conditions to make arrays even more accessable.
+  
+Example:
+  Let's say you are making a friends list or want to keep track of your friends.
+  You can make a list named 'friends':
+    friends: []
+  Then within the friends list you can add names:
+    friends: ['Darcey','Mark','Lucy']
+  Now that you have their names, what if you want to get their age.
+  Create an age list named 'age':
+    age: []
+  Within age, you can your friend's ages:
+    age: [15,16,16]
+  
+  To show the list value on screen you create a Text Element with the following code:
+    <Text style={styles.paragraph}>
+        {this.state.friends[0]}
+    </Text>
+  This will display Darcey.
+  Then if you want to display their age as well you create another Text Element:
+    <Text stlye={styles.paragraph}>
+        {this.state.age[0]
+    </Text>
+  This will print 15.  
+  
